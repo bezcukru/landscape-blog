@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+* {
+    margin: 0;
+}
+
+body{
+    background-color: #fff;
+    font-size: 1.2em;
+    font-family: 'Merriweather', serif;
+    }
+ a {
+     text-decoration: none;
+     color: #000;    
+ }
+ a:hover {
+     color: #FFA772;
+     transition: 0.3s;
+ }
+    .main {
+    
+    /* for testing*/
+    // border: solid 2px #444;
+    width: 90%;
+    margin:auto;
+    overflow: hidden;
+    
+    } 
+    
+    /* for  mobile*/
+    
+    
+    @media (min-width: 1150px) {
+    .main {
+    width: 80%;
+    margin: auto;
+    // border: solid .3em #239B6F;
+    }
+    }
+    
+    .header{
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    text-align: center;
+    }
+
+.logo {
+    width: 600px;
+}
+   .box {
+    font-size: 90%;
+    }
+
+    
+    .title{
+    font-weight: 700;
+    font-size: 180%;
+    text-decoration: underline;
+    }
+    
+     @media (max-width: 650px) {
+     .title {
+    width: 65%;
+       font-size: 120%;
+     }
+     }
+    
+    .grid {
+    display: grid;
+    // border: 2px blue solid;
+    height: 3000px;
+    width: 900px;
+    margin:auto;
+    /*   row/column */
+    grid-template: repeat(28, 1fr) / repeat(12, 1fr);
+    }
+    
+    // @media (max-width: 650px) {
+    // .grid {
+    
+    // }
+    // }
+    
+    img {
+    max-width:100%;
+    }
+    
+    /* image elements for each section */
+    .a {
+    grid-row-start: 1;
+    grid-row-end:5;
+    grid-column-start: 3;
+    grid-column-end: 13;
+    z-index: 1;
+    
+    }
+    
+    
+    /* set 1 */
+    
+    
+    .b {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    z-index: 6;
+    
+    }
+    
+    .c {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    z-index: 6;
+    
+    }
+    /* end set 1 */
+    
+    
+    /* set 2 */
+    .d {
+    grid-row-start:5;
+    grid-row-end: 12;
+    grid-column-start:1;
+    grid-column-end: 7;
+    z-index: 2;
+    
+    }
+    
+    .e {
+    grid-row-start: 7;
+    grid-row-end: 9;
+    grid-column-start:6;
+    grid-column-end: 10;
+    z-index: 6;
+    
+    
+    }
+    
+    .f {
+    grid-row-start: 9;
+    grid-row-end: 10;
+    grid-column-start:7;
+    grid-column-end: 10;
+    z-index: 6;
+    
+    }
+    
+    /* end set 2 */
+    
+    
+    /* set 3 */
+    
+    .g {
+    grid-row-start: 11;
+    grid-row-end: 16;
+    grid-column-start:3;
+    grid-column-end: 13;
+    z-index: 3;
+    
+    }
+    
+    .h {
+    grid-row-start: 12;
+    grid-row-end: 14;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    z-index: 6;
+    
+    
+    }
+    
+    
+    .i {
+    grid-row-start: 14;
+    grid-row-end: 15;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    z-index: 6;
+    
+    }
+    
+    /* end set 3 */
+    
+    
+    
+    /* set 4 */
+    .j{
+    grid-row-start: 15;
+    grid-row-end: 22;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    z-index: 4;
+    
+    }
+    
+    
+    .k{
+    grid-row-start: 17;
+    grid-row-end: 19;
+    grid-column-start: 6;
+    grid-column-end: 10;
+    z-index: 6;
+    
+    
+    }
+    
+    .l{
+    grid-row-start: 19;
+    grid-row-end: 20;
+    grid-column-start: 7;
+    grid-column-end: 9;
+    z-index: 6;
+    
+    }
+    /* end set 4 */
+    
+    /* set 5  */
+    .m{
+    grid-row-start: 21;
+    grid-row-end: 27;
+    grid-column-start: 3;
+    grid-column-end: 13;
+    z-index: 5;
+    }
+    
+    
+    .n{
+    grid-row-start: 22;
+    grid-row-end: 24;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    z-index: 6;
+    
+    
+    }
+    
+    .o{
+    grid-row-start: 24;
+    grid-row-end: 26;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    z-index: 6;
+    
+    }
+    
+    /* end set 5 */
+  
+    .social, .footer {
+       text-align: center;
+    }
+    .social {
+        background-color: #f4f4f4;
+        padding: 5px 0;
+        border-radius: 5px;
+    }
+    .social-icon {
+        padding: 0 20px;
+    }
+    .footer {
+        font-size: 70%;
+        padding: 20px;
+    }
