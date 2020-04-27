@@ -36,6 +36,17 @@ a:hover {
     }
 }
 
+@media (max-width: 730px) {
+    .title {
+        width: 65%;
+        font-size: 120%;
+    }
+
+    .grid {
+        width: 600px;
+    }
+}
+
 .header {
     margin-top: 5vh;
     margin-bottom: 10vh;
@@ -53,19 +64,13 @@ a:hover {
     text-decoration: underline;
 }
 
-.title, .subtitle {
+.title,
+.subtitle {
     text-transform: capitalize;
 }
 
 .subtitle {
     text-shadow: 1px 1px 10px #fff;
-}
-
-@media (max-width: 650px) {
-    .title {
-        width: 65%;
-        font-size: 120%;
-    }
 }
 
 .grid {
@@ -75,14 +80,6 @@ a:hover {
     margin: auto;
     grid-template: repeat(28, 1fr) / repeat(12, 1fr);
 }
-
-/* // @media (max-width: 650px) {
-// .grid {
-
-// }
-    .box {
-
-// } */
 
 img {
     max-width: 100%;
@@ -250,6 +247,28 @@ img {
 }
 
 /* end set 5 */
+
+/* img hover effect */
+
+.container {
+    position: relative;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+}
+
+.container:hover .image {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+
+/* end img hover */
 
 .social,
 .footer {
